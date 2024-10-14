@@ -74,10 +74,7 @@ class board:
         return
     
     def clear(self):
-        for i in range(len(self.area)):
-            for j in range(len(self.area[i])):
-                del self.area[i][j]
-                self.area[i].insert(j, 0)
+        self.area = [[0 for i in range(len(self.area[x]))] for x in range(len(self.area))]
         return
     
 
