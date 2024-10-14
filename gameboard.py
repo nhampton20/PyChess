@@ -73,6 +73,7 @@ class board:
         self.selected = []
         return
     
+    #hi
     def clear(self):
         self.area = [[0 for i in range(len(self.area[x]))] for x in range(len(self.area))]
         return
